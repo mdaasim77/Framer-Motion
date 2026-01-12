@@ -23,3 +23,8 @@ body {
 .image_second {
   height: 200px;
 }
+.square {
+  height: 200px;
+  width: 200px;
+  background-color: gray;
+}
