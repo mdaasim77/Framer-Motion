@@ -1,4 +1,7 @@
-* {
+@import "tailwindcss";
+
+/* first second and hover drag code of css */
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,4 +30,6 @@ body {
   height: 200px;
   width: 200px;
   background-color: gray;
-}
+} */
+
+/* first second and hover drag code of css */
