@@ -7,11 +7,11 @@ import Second from "./Components/Second";
 export default function App() {
   return (
     <>
-      {/* <First /> */}
+      <FigmaProject />
+      <First />
       {/* <Second /> */}
       {/* <HoverDrag /> */}
       {/* <ScrollEffect /> */}
-      <FigmaProject />
     </>
   );
 }
