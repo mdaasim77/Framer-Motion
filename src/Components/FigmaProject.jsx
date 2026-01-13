@@ -4,6 +4,10 @@ export default function FigmaProject() {
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], [0, 100]);
   const x = useTransform(scrollYProgress, [0, 1], [0, -900]);
+  const rotate1 = useTransform(scrollYProgress, [0, 1], [0, -40]);
+  const rotate2 = useTransform(scrollYProgress, [0, 1], [0, -30]);
+  const rotate3 = useTransform(scrollYProgress, [0, 1], [0, -20]);
+  const rotate4 = useTransform(scrollYProgress, [0, 1], [0, -10]);
 
   return (
     <div className="bg-gray-800 min-h-[160vh] w-full relative overflow-hidden ">
@@ -15,10 +19,22 @@ export default function FigmaProject() {
         style={{ x, y }}
         className="flex gap-5 sticky top-[60vh] right-0 p-10 translate-x-3/5 translate-y-1/2"
       >
-        <div className="bg-gray-400 h-56 w-56 rounded-2xl"></div>
-        <div className="bg-green-600 h-56 w-56 rounded-2xl"></div>
-        <div className="bg-blue-400 h-56 w-56 rounded-2xl"></div>
-        <div className="bg-pink-400 h-56 w-56 rounded-2xl"></div>
+        <motion.div
+          style={{ rotate: rotate1 }}
+          className="bg-gray-400 h-56 w-56 rounded-2xl"
+        ></motion.div>
+        <motion.div
+          style={{ rotate: rotate2 }}
+          className="bg-green-600 h-56 w-56 rounded-2xl"
+        ></motion.div>
+        <motion.div
+          style={{ rotate: rotate3 }}
+          className="bg-blue-400 h-56 w-56 rounded-2xl"
+        ></motion.div>
+        <motion.div
+          style={{ rotate: rotate4 }}
+          className="bg-pink-400 h-56 w-56 rounded-2xl"
+        ></motion.div>
       </motion.div>
     </div>
   );
