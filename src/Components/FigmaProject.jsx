@@ -5,18 +5,19 @@ export default function FigmaProject() {
   const y = useTransform(scrollYProgress, [0, 1], [0, -200]);
 
   return (
-    <div className="bg-gray-800 h-screen w-full relative overflow-hidden">
-      <h2 className=" text-white text-center pt-20 text-4xl font-serif">
+    <div className="bg-gray-800 min-h-[160vh] w-full relative overflow-hidden">
+      <h2 className=" text-white text-center fixed top-40 right-64 text-4xl font-serif">
         This Website Looks Cool
       </h2>
+
       <motion.div
         style={{ y }}
-        className="flex gap-5 absolute bottom-0 right-0 p-10 translate-x-2/5 "
+        className="flex gap-5 sticky top-[60vh] right-0 p-10 translate-x-3/5 translate-y-1/2"
       >
-        <div className="bg-gray-400 h-56 w-56 rounded-2xl translate-y-1/2"></div>
-        <div className="bg-green-600 h-56 w-56 rounded-2xl translate-y-1/2"></div>
-        <div className="bg-blue-400 h-56 w-56 rounded-2xl translate-y-1/2"></div>
-        <div className="bg-pink-400 h-56 w-56 rounded-2xl translate-y-1/2"></div>
+        <div className="bg-gray-400 h-56 w-56 rounded-2xl"></div>
+        <div className="bg-green-600 h-56 w-56 rounded-2xl"></div>
+        <div className="bg-blue-400 h-56 w-56 rounded-2xl"></div>
+        <div className="bg-pink-400 h-56 w-56 rounded-2xl"></div>
       </motion.div>
     </div>
   );
