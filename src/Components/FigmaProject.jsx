@@ -1,7 +1,17 @@
-import React from "react";
-
-export default function Figma_Project() {
-  return <div>Figma_Project</div>;
+export default function FigmaProject() {
+  return (
+    <div className="bg-gray-800 h-screen w-full relative overflow-hidden">
+      <h2 className=" text-white text-center pt-20 text-4xl font-serif">
+        This Website Looks Cool
+      </h2>
+      <div className="flex gap-5 absolute bottom-0 right-0 p-10 translate-x-2/5 ">
+        <div className="bg-gray-400 h-56 w-56 rounded-2xl translate-y-1/2"></div>
+        <div className="bg-green-600 h-56 w-56 rounded-2xl translate-y-1/2"></div>
+        <div className="bg-blue-400 h-56 w-56 rounded-2xl translate-y-1/2"></div>
+        <div className="bg-pink-400 h-56 w-56 rounded-2xl translate-y-1/2"></div>
+      </div>
+    </div>
+  );
 }
 
 // import { motion, useScroll, useTransform } from "framer-motion";
