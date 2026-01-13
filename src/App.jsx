@@ -1,3 +1,4 @@
+import FigmaProject from "./Components/FigmaProject";
 import First from "./Components/First";
 import HoverDrag from "./Components/HoverDrag";
 import ScrollEffect from "./Components/ScrollEffect";
@@ -9,7 +10,8 @@ export default function App() {
       {/* <First /> */}
       {/* <Second /> */}
       {/* <HoverDrag /> */}
-      <ScrollEffect />
+      {/* <ScrollEffect /> */}
+      <FigmaProject />
     </>
   );
 }
