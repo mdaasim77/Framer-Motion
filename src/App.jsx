@@ -8,7 +8,7 @@ export default function App() {
   return (
     <>
       <FigmaProject />
-      <First />
+      {/* <First /> */}
       {/* <Second /> */}
       {/* <HoverDrag /> */}
       {/* <ScrollEffect /> */}
