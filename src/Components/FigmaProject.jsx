@@ -11,10 +11,9 @@ export default function FigmaProject() {
 
   return (
     <div className="bg-gray-800 min-h-[160vh] w-full relative overflow-hidden ">
-      <h2 className=" text-white text-center fixed top-40 right-64 text-4xl font-serif z-10">
+      <h1 className=" text-white text-center fixed top-40 right-64 text-4xl font-serif z-10">
         This Website Looks Cool
-      </h2>
-
+      </h1>
       <motion.div
         style={{ x, y }}
         className="flex gap-5 sticky top-[60vh] right-0 p-10 translate-x-3/5 translate-y-1/2"
