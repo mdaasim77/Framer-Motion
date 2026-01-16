@@ -10,14 +10,14 @@ import Third from "./Components/Third";
 const App = () => {
   return (
     <>
-      {/* <FigmaProject /> */}
-      {/* <First /> */}
+      <FigmaProject />
+      <First />
       {/* <Second /> */}
       {/* <HoverDrag /> */}
       {/* <ScrollEffect /> */}
       {/* <Third /> */}
       {/* <FourthButton /> */}
-      <ProButton />
+      {/* <ProButton /> */}
     </>
   );
 };
