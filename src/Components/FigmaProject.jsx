@@ -4,9 +4,9 @@ export default function FigmaProject() {
   const { scrollYProgress } = useScroll();
 
   const smoothScroll = useSpring(scrollYProgress, {
-    stiffness: 500,
-    damping: 50,
-    mass: 1,
+    stiffness: 700,
+    damping: 500,
+    mass: 1.2,
   });
 
   const y = useTransform(smoothScroll, [0, 1], [0, 1600]);
