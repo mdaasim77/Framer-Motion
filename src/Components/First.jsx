@@ -7,7 +7,7 @@ export default function First() {
         <motion.div
           className="box"
           animate={{ x: 750, y: 100, rotate: 360, scale: 0.5 }}
-          transition={{ duration: 3, delay: 1 }}
+          transition={{ duration: 3, delay: 3 }}
         ></motion.div>
       </div>
     </>
