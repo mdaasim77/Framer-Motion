@@ -23,18 +23,23 @@ export default function FigmaProject() {
       >
         <motion.div
           style={{ rotate: rotate1 }}
+          initial={{ scale: 1 }}
+          animate={{ scale: 0.7 }}
           className="bg-gray-400 h-56 w-56 rounded-2xl"
         ></motion.div>
         <motion.div
           style={{ rotate: rotate2 }}
+          animate={{ scale: 0.7 }}
           className="bg-green-600 h-56 w-56 rounded-2xl"
         ></motion.div>
         <motion.div
           style={{ rotate: rotate3 }}
+          animate={{ scale: 0.7 }}
           className="bg-blue-400 h-56 w-56 rounded-2xl"
         ></motion.div>
         <motion.div
           style={{ rotate: rotate4 }}
+          animate={{ scale: 0.7 }}
           className="bg-pink-400 h-56 w-56 rounded-2xl"
         ></motion.div>
       </motion.div>
