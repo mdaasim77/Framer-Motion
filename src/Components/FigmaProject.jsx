@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 
 export default function FigmaProject() {
   const { scrollYProgress } = useScroll();
-  const y = useTransform(scrollYProgress, [0, 1], [0, 1200]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 1600]);
   const x = useTransform(scrollYProgress, [0, 1], [0, -900]);
   const rotate1 = useTransform(scrollYProgress, [0, 1], [0, -40]);
   const rotate2 = useTransform(scrollYProgress, [0, 1], [0, -30]);
@@ -11,7 +11,7 @@ export default function FigmaProject() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.6]);
 
   return (
-    <div className="bg-gray-800 min-h-[260vh] w-full relative overflow-hidden ">
+    <div className="bg-gray-800 min-h-[300vh] w-full relative overflow-hidden ">
       <motion.h1
         whileHover={{ scale: 2 }}
         className=" text-white text-center fixed top-40 right-64 text-4xl font-serif z-10"
