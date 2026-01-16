@@ -3,7 +3,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 export default function FigmaProject() {
   const { scrollYProgress } = useScroll();
   const y = useTransform(scrollYProgress, [0, 1], [0, 1600]);
-  const x = useTransform(scrollYProgress, [0, 1], [0, -900]);
+  const x = useTransform(scrollYProgress, [0, 1], [0, -1000]);
   const rotate1 = useTransform(scrollYProgress, [0, 1], [0, -40]);
   const rotate2 = useTransform(scrollYProgress, [0, 1], [0, -30]);
   const rotate3 = useTransform(scrollYProgress, [0, 1], [0, -20]);

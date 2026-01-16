@@ -22,7 +22,7 @@ body {
 }
 
 .box {
-  height: 100vh;
+  height: 200px;
   width: 200px;
   background-color: red;
   margin: 10px;
