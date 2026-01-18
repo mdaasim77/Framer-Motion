@@ -10,7 +10,7 @@ export default function FigmaProject() {
   });
 
   const y = useTransform(smoothScroll, [0, 1], [0, 1600]);
-  const x = useTransform(smoothScroll, [0, 1], [0, -1000]);
+  // const x = useTransform(smoothScroll, [0, 1], [0, -1000]);
 
   const rotate1 = useTransform(smoothScroll, [0, 1], [0, -40]);
   const rotate2 = useTransform(smoothScroll, [0, 1], [0, -30]);
