@@ -17,7 +17,7 @@ export default function FigmaProject() {
   const rotate3 = useTransform(smoothScroll, [0, 1], [0, -20]);
   const rotate4 = useTransform(smoothScroll, [0, 1], [0, -10]);
 
-  const scale = useTransform(smoothScroll, [0, 1], [1, 0.6]);
+  // const scale = useTransform(smoothScroll, [0, 1], [1, 0.6]);
 
   return (
     <div className="bg-gray-800 min-h-[300vh] w-full relative overflow-hidden">
