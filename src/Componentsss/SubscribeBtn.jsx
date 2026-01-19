@@ -7,12 +7,12 @@ export default function SubscribeBtn() {
       <motion.button
         whileHover={{
           color: "#26C6DA",
-          boxShadow: "0 20px 40px rgba(34,211,238,0.6)",
+          boxShadow: "0px 40px 100px #26C6DA",
           rotateX: 25,
           rotateZ: 10,
         }}
         transition={{ duration: 0.3 }}
-        className="bg-gray-800 text-amber-50 px-32 py-12 rounded-3xl text-3xl border-0  shadow-cyan-400"
+        className="bg-gray-800 text-amber-50 px-32 py-12 rounded-3xl text-3xl "
       >
         Subscribe
       </motion.button>
