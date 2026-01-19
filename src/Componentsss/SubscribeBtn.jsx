@@ -8,9 +8,14 @@ export default function SubscribeBtn() {
         whileHover={{
           color: "#26C6DA",
           boxShadow: "0px 40px 100px #26C6DA",
-          rotateX: 25,
-          rotateZ: 10,
+          // rotateX: 25,
+          // rotateZ: 10,
+          // y: -20, // extra work
+          // x: 40, // extra work
+          scale: 1.2,
         }}
+        initial={{ scale: 0.8 }} // extra
+        whileTap={{ scale: 1 }} // extra
         transition={{ duration: 0.3 }}
         className="bg-gray-800 text-amber-50 px-32 py-12 rounded-3xl text-3xl "
       >
