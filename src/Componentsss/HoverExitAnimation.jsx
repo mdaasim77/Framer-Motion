@@ -28,7 +28,9 @@ export default function HoverExitAnimation() {
             />
           </button>
         </div>
-        <div className="bg-gray-100 flex-1 m-4 border border-gray-200 rounded"></div>
+        <div className="bg-gray-100 flex-1 m-4 border border-gray-200 rounded">
+          <div className="h-full w-full rounded border ">5</div>
+        </div>
       </div>
     </div>
   );
