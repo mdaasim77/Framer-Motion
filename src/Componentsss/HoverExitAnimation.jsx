@@ -28,8 +28,113 @@ export default function HoverExitAnimation() {
             />
           </button>
         </div>
-        <div className="bg-gray-100 flex-1 m-4 border border-gray-200 rounded">
-          <div className="h-full w-full rounded border ">5</div>
+        <div className="bg-gray-100 flex-1 m-4 border relative border-gray-200 rounded">
+          <div className="h-full w-full rounded border absolute bg-gray-100 divide-y ">
+            <div className="flex p-4 gap-4 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                <path d="M3 7l9 6l9 -6" />
+              </svg>
+              <div>
+                <h2 className="text-[14px] text-gray-500 font-bold">
+                  Aceternity UI Components
+                </h2>
+                <p className="text-[12px] text-gray-500">
+                  A collection of UI Components
+                </p>
+              </div>
+            </div>
+            <div className="flex p-4 gap-4 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                <path d="M3 7l9 6l9 -6" />
+              </svg>
+              <div>
+                <h2 className="text-[14px] text-gray-500 font-bold">
+                  Aceternity UI Components
+                </h2>
+                <p className="text-[12px] text-gray-500">
+                  A collection of UI Components
+                </p>
+              </div>
+            </div>
+            <div className="flex p-4 gap-4 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                <path d="M3 7l9 6l9 -6" />
+              </svg>
+              <div>
+                <h2 className="text-[14px] text-gray-500 font-bold">
+                  Aceternity UI Components
+                </h2>
+                <p className="text-[12px] text-gray-500">
+                  A collection of UI Components
+                </p>
+              </div>
+            </div>
+            <div className="flex p-4 gap-4 items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-mail"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
+                <path d="M3 7l9 6l9 -6" />
+              </svg>
+              <div>
+                <h2 className="text-[14px] text-gray-500 font-bold">
+                  Aceternity UI Components
+                </h2>
+                <p className="text-[12px] text-gray-500">
+                  A collection of UI Components
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
