@@ -11,15 +11,24 @@ export default function HoverExitAnimation() {
         <p className="text-start text-[14px] ms-4  mt-4  pt-1 text-gray-500">
           Lorem ipsum vitae illo doloremque sint facilis officia?
         </p>
-        <div className="flex items-center justify-center shadow-2xl">
-          <button className="  border py-2 text-[12px] px-3 flex rounded-md mt-2 text-center">
+        <div className="flex items-center justify-center">
+          <button className="py-2 text-[12px]  shadow-2xl px-3 flex gap-1 rounded-lg mt-2 text-center">
             <img
+              width={"16px"}
+              height={"10px"}
               src="/src/Assets/Logo.png"
-              className="w-5 bg-amber-500 me-1.5"
+              className="bg-gray-500 rounded mt-0.5 me-1.5"
             />
             Aceternity
+            <img
+              src="/src/Assets/close.svg"
+              width={"10px"}
+              height={"10px"}
+              alt=""
+            />
           </button>
         </div>
+        <div className="container">box</div>
       </div>
     </div>
   );
