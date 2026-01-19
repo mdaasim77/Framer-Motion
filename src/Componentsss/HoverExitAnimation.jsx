@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 export default function HoverExitAnimation() {
   return (
     <div className="h-screen w-full flex items-center justify-center">
-      <div className="bg-white h-96 w-72 shadow-2xl rounded-2xl ">
+      <div className="bg-white flex flex-col h-5/6 w-72 shadow-2xl rounded-2xl ">
         <h2 className="text-[14px] font-bold text-start ms-4  mt-4 pt-1 text-gray-500">
           Lorem, ipsum dolor.
         </h2>
@@ -28,7 +28,7 @@ export default function HoverExitAnimation() {
             />
           </button>
         </div>
-        <div className="container">box</div>
+        <div className="bg-gray-100 flex-1 m-4 border border-gray-200 rounded"></div>
       </div>
     </div>
   );
