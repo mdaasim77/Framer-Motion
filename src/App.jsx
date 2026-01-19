@@ -6,6 +6,7 @@ import ProButton from "./Components/ProButton";
 import ScrollEffect from "./Components/ScrollEffect";
 import Second from "./Components/Second";
 import Third from "./Components/Third";
+import HoverExitAnimation from "./Componentsss/HoverExitAnimation";
 import SubscribeBtn from "./Componentsss/SubscribeBtn";
 
 const App = () => {
@@ -19,7 +20,8 @@ const App = () => {
       {/* <Third /> */}
       {/* <FourthButton /> */}
       {/* <ProButton /> */}
-      <SubscribeBtn />
+      {/* <SubscribeBtn /> */}
+      <HoverExitAnimation />
     </>
   );
 };
