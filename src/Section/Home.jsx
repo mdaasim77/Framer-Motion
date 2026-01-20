@@ -46,21 +46,43 @@ const Home = () => {
         <div className="flex items-center justify-around">
           <div className="grid grid-cols-2 gap-3 w-80 ml-40 mt-24 ">
             <div className="rounded-2xl bg-[#ae7dec] h-40 ">1</div>
-            <div className="rounded-2xl bg-[#e36f6f] h-fill  row-span-2">2</div>
+            <div className="rounded-2xl bg-[#e36f6f] row-span-2">2</div>
             <div className="rounded-2xl bg-[#1a74c7] h-40 ">3</div>
-            <div className="rounded-2xl bg-[#3a3d42] h-40 w-fill col-span-2">
-              4
-            </div>
+            <div className="rounded-2xl bg-[#3a3d42] h-40 col-span-2">4</div>
             <div className="rounded-2xl bg-[#f1cf78] h-40 ">5</div>
             <div className="rounded-2xl bg-[#2ac88f] h-40 ">6</div>
           </div>
-          <div>
-            <img className="h-64 w-64" src="src/Assets/paper.png" alt="" />
-            <img className="h-64 w-64" src="src/Assets/paper20.png" alt="" />
-            <img className="h-64 w-64" src="src/Assets/paper40.png" alt="" />
-            <img className="h-64 w-64" src="src/Assets/paper60.png" alt="" />
-            <img className="h-64 w-64" src="src/Assets/paper80.png" alt="" />
-            <img className="h-64 w-64" src="src/Assets/paper100.png" alt="" />
+          <div className="relative h-64 w-64">
+            <img
+              className="h-64 w-64 absolute inset-0"
+              src="src/Assets/paper.png"
+              alt=""
+            />
+            <img
+              className="h-64 w-64 absolute inset-0"
+              src="src/Assets/paper20.png"
+              alt=""
+            />
+            <img
+              className="h-64 w-64 absolute inset-0"
+              src="src/Assets/paper40.png"
+              alt=""
+            />
+            <img
+              className="h-64 w-64 absolute inset-0"
+              src="src/Assets/paper60.png"
+              alt=""
+            />
+            <img
+              className="h-64 w-64 absolute inset-0"
+              src="src/Assets/paper80.png"
+              alt=""
+            />
+            <img
+              className="h-64 w-64 absolute inset-0"
+              src="src/Assets/paper100.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
