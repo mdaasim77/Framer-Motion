@@ -8,6 +8,7 @@ import Second from "./Components/Second";
 import Third from "./Components/Third";
 import HoverExitAnimation from "./Componentsss/HoverExitAnimation";
 import SubscribeBtn from "./Componentsss/SubscribeBtn";
+import Home from "./Section/Home";
 
 const App = () => {
   return (
@@ -21,7 +22,8 @@ const App = () => {
       {/* <FourthButton /> */}
       {/* <ProButton /> */}
       {/* <SubscribeBtn /> */}
-      <HoverExitAnimation />
+      {/* <HoverExitAnimation /> */}
+      <Home />
     </>
   );
 };
