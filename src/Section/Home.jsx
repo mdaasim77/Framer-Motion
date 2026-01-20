@@ -55,13 +55,29 @@ const Home = () => {
       <div className="bg-white h-screen w-full">
         <h2 className="text-3xl text-black font-bold">Lorem, ipsum dolor.</h2>
         <div className="flex items-center justify-around">
-          <div className="grid grid-cols-2 gap-3 w-80 ml-40 mt-24 ">
-            <div className="rounded-2xl bg-[#ae7dec] h-40 ">1</div>
-            <div className="rounded-2xl bg-[#e36f6f] row-span-2">2</div>
-            <div className="rounded-2xl bg-[#1a74c7] h-40 ">3</div>
-            <div className="rounded-2xl bg-[#3a3d42] h-40 col-span-2">4</div>
-            <div className="rounded-2xl bg-[#f1cf78] h-40 ">5</div>
-            <div className="rounded-2xl bg-[#2ac88f] h-40 ">6</div>
+          <div className="grid grid-cols-2 gap-3 w-72 ml-40 mt-24 ">
+            <div className="rounded-2xl bg-[#ae7dec] h-28 flex items-end justify-end px-4 text-white pb-4 font-bold text-3xl">
+              UI
+              <br />
+              UX
+            </div>
+            <div className="rounded-2xl bg-[#e36f6f] row-span-2 px-4 text-white pb-4 font-bold text-3xl">
+              <p className="rotate-270 mt-48 ms-24">BRANDING</p>
+            </div>
+            <div className="rounded-2xl bg-[#1a74c7] h-28 flex items-end justify-start px-4 text-white pb-4 font-bold text-3xl">
+              VFX
+            </div>
+            <div className="rounded-2xl bg-[#3a3d42] h-28 col-span-2 text-white text-3xl font-bold flex items-end justify-center">
+              DEVELOPMENT
+            </div>
+            <div className="rounded-2xl bg-[#f1cf78] h-28 flex items-end justify-start">
+              <p className="text-black font-bold text-3xl ms-4">
+                B<span className="text-2xl">2</span>B
+              </p>
+            </div>
+            <div className="rounded-2xl bg-[#2ac88f] h-28 flex items-end justify-end text-black text-3xl font-bold">
+              <p className=" me-4 relative">3D</p>
+            </div>
           </div>
           <div className="relative h-64 w-64">
             {papers.map((src, index) => {
