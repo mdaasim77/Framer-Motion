@@ -1,6 +1,17 @@
-import React from "react";
+import { motion } from "motion/react";
+import { useState } from "react";
 
 const Home = () => {
+  const [paper, setPaper] = useState(0);
+
+  const papers = [
+    "src/Assets/paper.png",
+    "src/Assets/paper20.png",
+    "src/Assets/paper40.png",
+    "src/Assets/paper60.png",
+    "src/Assets/paper80.png",
+    "src/Assets/paper100.png",
+  ];
   return (
     <>
       <div className="w-full h-[300vh] bg-black">
@@ -53,39 +64,39 @@ const Home = () => {
             <div className="rounded-2xl bg-[#2ac88f] h-40 ">6</div>
           </div>
           <div className="relative h-64 w-64">
-            <img
-              className="h-64 w-64 absolute inset-0"
-              src="src/Assets/paper.png"
-              alt=""
-            />
-            <img
-              className="h-64 w-64 absolute inset-0"
-              src="src/Assets/paper20.png"
-              alt=""
-            />
-            <img
-              className="h-64 w-64 absolute inset-0"
-              src="src/Assets/paper40.png"
-              alt=""
-            />
-            <img
-              className="h-64 w-64 absolute inset-0"
-              src="src/Assets/paper60.png"
-              alt=""
-            />
-            <img
-              className="h-64 w-64 absolute inset-0"
-              src="src/Assets/paper80.png"
-              alt=""
-            />
-            <img
-              className="h-64 w-64 absolute inset-0"
-              src="src/Assets/paper100.png"
-              alt=""
-            />
+            {papers.map((src, index) => {
+              return (
+                <motion.img
+                  key={index}
+                  src={src}
+                  className="h-64 w-64 absolute inset-0"
+                  animate={{ opacity: paper === index ? 1 : 0 }}
+                  transition={{ duration: 0.5 }}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
+
+      {/* ======== */}
+      <div className="flex gap-2 mt-4">
+        <button
+          className="bg-black text-white px-3 py-1"
+          onClick={() => setPaper((prev) => Math.max(prev - 1, 0))}
+        >
+          Close
+        </button>
+
+        <button
+          className="bg-black text-white px-3 py-1"
+          onClick={() => setPaper((prev) => Math.min(prev + 1, 5))}
+        >
+          Open
+        </button>
+      </div>
+
+      {/* ======== */}
     </>
   );
 };
