@@ -41,7 +41,19 @@ const Home = () => {
       </div>
       {/* black section end */}
 
-      <div className="bg-white h-[150vh] w-full"></div>
+      <div className="bg-white h-[150vh] w-full">
+        <h2 className="text-3xl text-black font-bold">Lorem, ipsum dolor.</h2>
+        <div className="grid grid-cols-2 gap-3 w-80 ml-40 mt-24 ">
+          <div className="rounded-2xl bg-[#ae7dec] h-32 ">1</div>
+          <div className="rounded-2xl bg-[#e36f6f] h-fill  row-span-2">2</div>
+          <div className="rounded-2xl bg-[#1a74c7] h-32 ">3</div>
+          <div className="rounded-2xl bg-[#3a3d42] h-32 w-fill col-span-2">
+            4
+          </div>
+          <div className="rounded-2xl bg-[#f1cf78] h-32 ">5</div>
+          <div className="rounded-2xl bg-[#2ac88f] h-32 ">6</div>
+        </div>
+      </div>
     </>
   );
 };
