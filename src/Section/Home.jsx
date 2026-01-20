@@ -54,7 +54,14 @@ const Home = () => {
             <div className="rounded-2xl bg-[#f1cf78] h-40 ">5</div>
             <div className="rounded-2xl bg-[#2ac88f] h-40 ">6</div>
           </div>
-          <img className="h-64 w-64" src="src/Assets/paper.png" alt="" />
+          <div>
+            <img className="h-64 w-64" src="src/Assets/paper.png" alt="" />
+            <img className="h-64 w-64" src="src/Assets/paper20.png" alt="" />
+            <img className="h-64 w-64" src="src/Assets/paper40.png" alt="" />
+            <img className="h-64 w-64" src="src/Assets/paper60.png" alt="" />
+            <img className="h-64 w-64" src="src/Assets/paper80.png" alt="" />
+            <img className="h-64 w-64" src="src/Assets/paper100.png" alt="" />
+          </div>
         </div>
       </div>
     </>
