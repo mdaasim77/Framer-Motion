@@ -29,10 +29,37 @@ const Home = () => {
       if (step === papers.length - 1) {
         clearInterval(interval);
       }
-    }, 200);
+    }, 100);
 
     return () => clearInterval(interval);
   }, [activeService]);
+
+  const serviceContent = {
+    UIUX: {
+      title: "UI / UX Design",
+      desc: "We design user-friendly and visually appealing interfaces focused on usability and experience.",
+    },
+    Branding: {
+      title: "Branding",
+      desc: "We build strong brand identities with consistent visuals and messaging.",
+    },
+    VFX: {
+      title: "VFX",
+      desc: "High-quality motion graphics and visual effects for modern products.",
+    },
+    Development: {
+      title: "Development",
+      desc: "Scalable and performant web and application development solutions.",
+    },
+    B2B: {
+      title: "B2B Solutions",
+      desc: "Business-focused solutions designed for enterprise and long-term growth.",
+    },
+    "3D": {
+      title: "3D Design",
+      desc: "3D visuals and assets for products, branding, and marketing.",
+    },
+  };
 
   return (
     <>
@@ -119,7 +146,7 @@ const Home = () => {
               <p className=" me-4 relative">3D</p>
             </div>
           </div>
-          <div className="relative h-64 w-64">
+          {/* <div className="relative h-64 w-64">
             {papers.map((src, index) => {
               return (
                 <motion.img
@@ -131,7 +158,39 @@ const Home = () => {
                 />
               );
             })}
+          </div> */}
+
+          {/*  */}
+          <div className="relative h-64 w-64">
+            {papers.map((src, index) => (
+              <motion.img
+                key={index}
+                src={src}
+                className="absolute inset-0 h-64 w-64"
+                animate={{ opacity: paper === index ? 1 : 0 }}
+                // transition={{ duration: 0.4 }}
+              />
+            ))}
+
+            {/* TEXT CONTENT ON PAPER */}
+            {activeService && paper === papers.length - 1 && (
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+              >
+                <h3 className="text-lg font-bold text-black">
+                  {serviceContent[activeService].title}
+                </h3>
+                <p className="text-sm text-gray-600 mt-2">
+                  {serviceContent[activeService].desc}
+                </p>
+              </motion.div>
+            )}
           </div>
+
+          {/*  */}
         </div>
       </div>
     </>
