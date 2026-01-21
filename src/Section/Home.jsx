@@ -70,7 +70,7 @@ const Home = () => {
     <>
       <div className="w-full h-[200vh] bg-black">
         {/* text section */}
-        <div className="pt-20 px-20  text-white">
+        <div className="pt-20 px-20  text-white sticky top-[1vh]">
           <h2 className="text-orange-400 font-bold">Explore Service</h2>
           <h2 className="font-bold text-2xl">
             WE HAVE DONE <br /> COUNTLESS WORK!
@@ -101,7 +101,7 @@ const Home = () => {
         </motion.div>
 
         {/* images box end */}
-        <div className="relative top-[50vh] text-white">
+        <div className="relative top-[50vh] text-white ">
           <p className="font-medium text-2xl">
             Lorem ctetur adipisicing elit. Reiciendis, repellat.
           </p>
