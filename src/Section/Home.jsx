@@ -68,9 +68,9 @@ const Home = () => {
 
   return (
     <>
-      <div className="w-full h-[200vh] bg-black">
+      <div className="w-full min-h-[200vh] relative bg-black">
         {/* text section */}
-        <div className="pt-20 px-20  text-white sticky top-[1vh]">
+        <div className="pt-20 px-20  text-white ">
           <h2 className="text-orange-400 font-bold">Explore Service</h2>
           <h2 className="font-bold text-2xl">
             WE HAVE DONE <br /> COUNTLESS WORK!
@@ -79,32 +79,45 @@ const Home = () => {
         {/* text section end */}
 
         {/* images box START */}
-        <motion.div
-          style={{ x, y }}
-          className="relative top-[80vh] justify-end flex gap-5"
-        >
-          <img
-            src="/src/Assets/boy.jpg"
-            alt="Astronot"
-            className="h-56 w-56 rounded-2xl"
-          />
-          <img
-            src="/src/Assets/image.avif"
-            alt="Astronot"
-            className="h-56 w-56 rounded-2xl"
-          />
-          <img
-            src="/src/Assets/m2.png"
-            alt="Astronot"
-            className="h-56 w-56 rounded-2xl"
-          />
-        </motion.div>
+        <div className="relative top-[80vh]">
+          <motion.div style={{ x, y }} className=" justify-end flex gap-5">
+            <img
+              src="/src/Assets/boy.jpg"
+              alt="Astronot"
+              className="h-56 w-56 rounded-2xl"
+            />
+            <img
+              src="/src/Assets/image.avif"
+              alt="Astronot"
+              className="h-56 w-56 rounded-2xl"
+            />
+            <img
+              src="/src/Assets/m2.png"
+              alt="Astronot"
+              className="h-56 w-56 rounded-2xl"
+            />
+          </motion.div>
+        </div>
 
         {/* images box end */}
-        <div className="relative top-[50vh] text-white ">
-          <p className="font-medium text-2xl">
-            Lorem ctetur adipisicing elit. Reiciendis, repellat.
-          </p>
+        <div className="sticky top-[88vh] overflow-hidden bg-black py-6">
+          <motion.div
+            className="flex whitespace-nowrap text-white text-4xl font-bold"
+            animate={{ x: ["0%", "-50%"] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 12,
+              ease: "linear",
+            }}
+          >
+            <span className="mr-10">
+              NOW SHARE NOW SHARE NOW SHARE NOW SHARE NOW SHARE
+            </span>
+            <span className="mr-10">
+              NOW SHARE NOW SHARE NOW SHARE NOW SHARE NOW SHARE
+            </span>
+          </motion.div>
         </div>
       </div>
       {/* black section end */}
