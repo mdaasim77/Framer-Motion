@@ -1,9 +1,14 @@
-import { motion } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import { useState, useEffect } from "react";
 
 const Home = () => {
   const [paper, setPaper] = useState(0);
   const [activeService, setActiveService] = useState(null);
+
+  const { scrollYProgress } = useScroll();
+
+  const x = useTransform(scrollYProgress, [0, 1], [0, -2000]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, -300]);
 
   const papers = [
     "src/Assets/paper.png",
@@ -63,7 +68,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="w-full h-[300vh] bg-black">
+      <div className="w-full h-[200vh] bg-black">
         {/* text section */}
         <div className="pt-20 px-20  text-white">
           <h2 className="text-orange-400 font-bold">Explore Service</h2>
@@ -74,7 +79,10 @@ const Home = () => {
         {/* text section end */}
 
         {/* images box START */}
-        <div className="relative top-[100vh] justify-end flex gap-5">
+        <motion.div
+          style={{ x, y }}
+          className="relative top-[80vh] justify-end flex gap-5"
+        >
           <img
             src="/src/Assets/boy.jpg"
             alt="Astronot"
@@ -90,7 +98,7 @@ const Home = () => {
             alt="Astronot"
             className="h-56 w-56 rounded-2xl"
           />
-        </div>
+        </motion.div>
 
         {/* images box end */}
         <div className="relative top-[50vh] text-white">
@@ -146,19 +154,6 @@ const Home = () => {
               <p className=" me-4 relative">3D</p>
             </div>
           </div>
-          {/* <div className="relative h-64 w-64">
-            {papers.map((src, index) => {
-              return (
-                <motion.img
-                  key={index}
-                  src={src}
-                  className="h-96 w-full absolute inset-0"
-                  animate={{ opacity: paper === index ? 1 : 0 }}
-                  transition={{ duration: 2 }}
-                />
-              );
-            })}
-          </div> */}
 
           {/*  */}
           <div className="relative h-64 w-64">
@@ -168,7 +163,6 @@ const Home = () => {
                 src={src}
                 className="absolute inset-0 h-64 w-64"
                 animate={{ opacity: paper === index ? 1 : 0 }}
-                // transition={{ duration: 0.4 }}
               />
             ))}
 
