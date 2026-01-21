@@ -13,6 +13,27 @@ const Home = () => {
     "src/Assets/paper80.png",
     "src/Assets/paper100.png",
   ];
+
+  useEffect(() => {
+    if (!activeService) return;
+
+    // close paper first
+    setPaper(0);
+
+    let step = 0;
+
+    const interval = setInterval(() => {
+      step++;
+      setPaper(step);
+
+      if (step === papers.length - 1) {
+        clearInterval(interval);
+      }
+    }, 200);
+
+    return () => clearInterval(interval);
+  }, [activeService]);
+
   return (
     <>
       <div className="w-full h-[300vh] bg-black">
@@ -53,7 +74,7 @@ const Home = () => {
       </div>
       {/* black section end */}
 
-      <div className="bg-white h-screen w-full">
+      <div className="bg-gray-200 min-h-screen w-full">
         <h2 className="text-3xl text-black font-bold">Lorem, ipsum dolor.</h2>
         <div className="flex items-center justify-around">
           <div className="grid grid-cols-2 gap-3 w-72 ml-40 mt-24 ">
@@ -104,7 +125,7 @@ const Home = () => {
                 <motion.img
                   key={index}
                   src={src}
-                  className="h-64 w-64 absolute inset-0"
+                  className="h-96 w-full absolute inset-0"
                   animate={{ opacity: paper === index ? 1 : 0 }}
                   transition={{ duration: 2 }}
                 />
