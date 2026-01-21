@@ -1,8 +1,9 @@
 import { motion } from "motion/react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Home = () => {
   const [paper, setPaper] = useState(0);
+  const [activeService, setActiveService] = useState(null);
 
   const papers = [
     "src/Assets/paper.png",
@@ -56,26 +57,44 @@ const Home = () => {
         <h2 className="text-3xl text-black font-bold">Lorem, ipsum dolor.</h2>
         <div className="flex items-center justify-around">
           <div className="grid grid-cols-2 gap-3 w-72 ml-40 mt-24 ">
-            <div className="rounded-2xl bg-[#ae7dec] h-28 flex items-end justify-end px-4 text-white pb-4 font-bold text-3xl">
+            <div
+              onMouseEnter={() => setActiveService("UIUX")}
+              className="rounded-2xl bg-[#ae7dec] h-28 flex items-end justify-end px-4 text-white pb-4 font-bold text-3xl"
+            >
               UI
               <br />
               UX
             </div>
-            <div className="rounded-2xl bg-[#e36f6f] row-span-2 px-4 text-white pb-4 font-bold text-3xl">
+            <div
+              onMouseEnter={() => setActiveService("Branding")}
+              className="rounded-2xl bg-[#e36f6f] row-span-2 px-4 text-white pb-4 font-bold text-3xl"
+            >
               <p className="rotate-270 mt-48 ms-24">BRANDING</p>
             </div>
-            <div className="rounded-2xl bg-[#1a74c7] h-28 flex items-end justify-start px-4 text-white pb-4 font-bold text-3xl">
+            <div
+              onMouseEnter={() => setActiveService("VFX")}
+              className="rounded-2xl bg-[#1a74c7] h-28 flex items-end justify-start px-4 text-white pb-4 font-bold text-3xl"
+            >
               VFX
             </div>
-            <div className="rounded-2xl bg-[#3a3d42] h-28 col-span-2 text-white text-3xl font-bold flex items-end justify-center">
+            <div
+              onMouseEnter={() => setActiveService("Development")}
+              className="rounded-2xl bg-[#3a3d42] h-28 col-span-2 text-white text-3xl font-bold flex items-end justify-center"
+            >
               DEVELOPMENT
             </div>
-            <div className="rounded-2xl bg-[#f1cf78] h-28 flex items-end justify-start">
+            <div
+              onMouseEnter={() => setActiveService("B2B")}
+              className="rounded-2xl bg-[#f1cf78] h-28 flex items-end justify-start"
+            >
               <p className="text-black font-bold text-3xl ms-4">
                 B<span className="text-2xl">2</span>B
               </p>
             </div>
-            <div className="rounded-2xl bg-[#2ac88f] h-28 flex items-end justify-end text-black text-3xl font-bold">
+            <div
+              onMouseEnter={() => setActiveService("3D")}
+              className="rounded-2xl bg-[#2ac88f] h-28 flex items-end justify-end text-black text-3xl font-bold"
+            >
               <p className=" me-4 relative">3D</p>
             </div>
           </div>
@@ -87,32 +106,13 @@ const Home = () => {
                   src={src}
                   className="h-64 w-64 absolute inset-0"
                   animate={{ opacity: paper === index ? 1 : 0 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 2 }}
                 />
               );
             })}
           </div>
         </div>
       </div>
-
-      {/* ======== */}
-      <div className="flex gap-2 mt-4">
-        <button
-          className="bg-black text-white px-3 py-1"
-          onClick={() => setPaper((prev) => Math.max(prev - 1, 0))}
-        >
-          Close
-        </button>
-
-        <button
-          className="bg-black text-white px-3 py-1"
-          onClick={() => setPaper((prev) => Math.min(prev + 1, 5))}
-        >
-          Open
-        </button>
-      </div>
-
-      {/* ======== */}
     </>
   );
 };
