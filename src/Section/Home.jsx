@@ -8,7 +8,10 @@ const Home = () => {
   const { scrollYProgress } = useScroll();
 
   const x = useTransform(scrollYProgress, [0, 1], [0, -2000]);
-  const y = useTransform(scrollYProgress, [0, 1], [0, -300]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
+  const rotate1 = useTransform(scrollYProgress, [0, 0.35], [0, 30]);
+  const rotate2 = useTransform(scrollYProgress, [0, 0.35], [0, 40]);
+  const rotate3 = useTransform(scrollYProgress, [0, 0.35], [0, 35]);
 
   const papers = [
     "src/Assets/paper.png",
@@ -79,22 +82,25 @@ const Home = () => {
         {/* text section end */}
 
         {/* images box START */}
-        <div className="relative top-[80vh]">
+        <div className="relative top-[35vh]">
           <motion.div style={{ x, y }} className=" justify-end flex gap-5">
-            <img
+            <motion.img
               src="/src/Assets/boy.jpg"
               alt="Astronot"
               className="h-56 w-56 rounded-2xl"
+              style={{ rotate: rotate1 }}
             />
-            <img
+            <motion.img
               src="/src/Assets/image.avif"
               alt="Astronot"
               className="h-56 w-56 rounded-2xl"
+              style={{ rotate: rotate2 }}
             />
-            <img
+            <motion.img
               src="/src/Assets/m2.png"
               alt="Astronot"
               className="h-56 w-56 rounded-2xl"
+              style={{ rotate: rotate3 }}
             />
           </motion.div>
         </div>
