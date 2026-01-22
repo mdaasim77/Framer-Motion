@@ -149,6 +149,7 @@ const Home = () => {
           <div className="grid grid-cols-2 gap-3 w-72 ml-40 mt-24 ">
             <div
               onMouseEnter={() => setActiveService("UIUX")}
+              onMouseLeave={() => setActiveService(null)}
               className="rounded-2xl bg-[#ae7dec] h-28 flex items-end justify-end px-4 text-white pb-4 font-bold text-3xl"
             >
               UI
@@ -157,24 +158,28 @@ const Home = () => {
             </div>
             <div
               onMouseEnter={() => setActiveService("Branding")}
+              onMouseLeave={() => setActiveService(null)}
               className="rounded-2xl bg-[#e36f6f] row-span-2 px-4 text-white pb-4 font-bold text-3xl"
             >
               <p className="rotate-270 mt-48 ms-24">BRANDING</p>
             </div>
             <div
               onMouseEnter={() => setActiveService("VFX")}
+              onMouseLeave={() => setActiveService(null)}
               className="rounded-2xl bg-[#1a74c7] h-28 flex items-end justify-start px-4 text-white pb-4 font-bold text-3xl"
             >
               VFX
             </div>
             <div
               onMouseEnter={() => setActiveService("Development")}
+              onMouseLeave={() => setActiveService(null)}
               className="rounded-2xl bg-[#3a3d42] h-28 col-span-2 text-white text-3xl font-bold flex items-end justify-center"
             >
               DEVELOPMENT
             </div>
             <div
               onMouseEnter={() => setActiveService("B2B")}
+              onMouseLeave={() => setActiveService(null)}
               className="rounded-2xl bg-[#f1cf78] h-28 flex items-end justify-start"
             >
               <p className="text-black font-bold text-3xl ms-4">
@@ -183,6 +188,7 @@ const Home = () => {
             </div>
             <div
               onMouseEnter={() => setActiveService("3D")}
+              onMouseLeave={() => setActiveService(null)}
               className="rounded-2xl bg-[#2ac88f] h-28 flex items-end justify-end text-black text-3xl font-bold"
             >
               <p className=" me-4 relative">3D</p>
