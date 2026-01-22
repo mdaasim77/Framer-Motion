@@ -4,7 +4,6 @@ import { useState } from "react";
 
 export default function HoverExitAnimation() {
   const [open, setOpen] = useState(true);
-  const [activeService, setActiveService] = useState(null);
 
   return (
     <div className="h-screen w-full flex items-center justify-center">
