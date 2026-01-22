@@ -123,7 +123,22 @@ const Home = () => {
       {/* black section end */}
 
       <div className="bg-gray-200 min-h-screen w-full">
-        <h2 className="text-3xl text-black font-bold">Lorem, ipsum dolor.</h2>
+        <div className="overflow-hidden bg-gray-200 py-4">
+          <motion.h2
+            animate={{ x: ["-50%", "0%"] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 12,
+              ease: "linear",
+            }}
+            className="flex whitespace-nowrap text-4xl text-black font-bold"
+          >
+            CREATIVE CONTENT CREATIVE CONTENT
+            <span className="mr-10">CREATIVE CONTENT CREATIVE CONTENT</span>
+            <span className="mr-10">CREATIVE CONTENT CREATIVE CONTENT</span>
+          </motion.h2>
+        </div>
         <div className="flex items-center justify-around">
           <div className="grid grid-cols-2 gap-3 w-72 ml-40 mt-24 ">
             <div
