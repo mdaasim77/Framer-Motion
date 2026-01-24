@@ -83,7 +83,7 @@ const Home = () => {
 
         {/* images box START */}
         <div className="relative top-[35vh]">
-          <motion.div style={{ x, y }} className=" justify-end flex gap-5">
+          <motion.div className=" justify-end flex gap-5">
             <motion.img
               src="/src/Assets/boy.jpg"
               alt="Astronot"
