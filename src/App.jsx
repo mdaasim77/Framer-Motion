@@ -22,8 +22,8 @@ const App = () => {
       {/* <FourthButton /> */}
       {/* <ProButton /> */}
       {/* <SubscribeBtn /> */}
-      {/* <HoverExitAnimation /> */}
-      <Home />
+      <HoverExitAnimation />
+      {/* <Home /> */}
     </>
   );
 };
