@@ -7,7 +7,7 @@ const Home = () => {
 
   const { scrollYProgress } = useScroll();
 
-  // const x = useTransform(scrollYProgress, [0, 1], [0, -2000]);
+  const x = useTransform(scrollYProgress, [0, 1], [0, -2000]);
   const y = useTransform(scrollYProgress, [0, 1], [0, -50]);
   const rotate1 = useTransform(scrollYProgress, [0, 0.35], [0, 30]);
   const rotate2 = useTransform(scrollYProgress, [0, 0.35], [0, 40]);
